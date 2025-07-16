@@ -3,7 +3,7 @@
   <img src="./.github/assets/finish-flag.png" alt="Logo" height="200">
   <h1 align="center"><strong>API Fórmula 1</strong></h1>
   <p align="center">
-	  Don't start a new Node project from zero!<br> Use this simple <b>Nodejs</b> boilerplate with pre-configured <b>Typescript</b> in a modern way.
+	  API com equipes da Fórmula 1, leve e eficiente para aplicações web e móveis, utilizando Node.js e Fastify. Esta API simplificada foca em operações CRUD básicas, ideal para projetos que necessitam de respostas rápidas e um ambiente minimalista.
   </p>
 
 </div>
@@ -30,16 +30,18 @@ Este projeto foi desenvolvido com os seguintes items:
 
 ### 📄 Files
 
-- `.gitignore` - Ignore folders like node_modules
-- `.env` - Enviroment variables
-- `tsconfig.json` - Typescript configure Options
+- .gitignore - Ignora pastas como node_modules
+- .env - Variáveis de ambiente
+- tsconfig.json - Configurações do TypeScript
 
 ### ⚡ Scripts
 
-- `npm run dist`: Compiles TypeScript files to JavaScript in the dist directory.
-- `npm run start:dev`: Runs the server in development mode with environment variables loaded from the .env file.
-- `npm run start:watch`: Runs the server in development mode with support for automatic reload on file changes.
-- `npm run start:dist`: Compiles the project and runs the compiled version from the dist directory.
+- `npm run dist`: Compila os arquivos TypeScript para JavaScript na pasta dist.
+- `npm run start:dev`: Executa o servidor em modo de desenvolvimento com as variáveis de ambiente carregadas do arquivo .env.
+- `npm run start:watch`: Executa o servidor em modo de desenvolvimento com suporte a recarregamento automático ao alterar os arquivos.
+- `npm run start:dist`: Compila o projeto e executa a versão compilada a partir da pasta dist.
+
+<br />
 
 # 👩🏽‍💻 Como utilizar
 
@@ -65,9 +67,13 @@ $ npm run start:dev
 | :---------------------------------------------------------------------------------------------------------------------------------------: |
 |                                            [Linkedin](www.linkedin.com/in/debora-vieira-carvalho-45a478205)                                             |
 
+<br />
+
 # Credits
 
 icons by [Flaticon ❤️][flaticon-icon]
+
+<br />
 
 Última atualização: jul.2025
 
