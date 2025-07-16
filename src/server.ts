@@ -1,7 +1,11 @@
 import fastify from "fastify";
-// import { request } from "http";
+import cors from "@fastify/cors";
 
 const server = fastify({logger: true});
+
+server.register(cors, {
+    origin: "*",
+});
 
 const teams = [
     {
@@ -20,7 +24,7 @@ const teams = [
         name: "red Bull Racing", 
         base: "Milton Keynes, United Kingdom"
     }
-]
+];
 
 const drivers = [
     {
@@ -39,7 +43,7 @@ const drivers = [
         name: "Lando Morris", 
         teams: "McLaren"
     }
-]
+];
 
 server.get("/teams", async (request, response) => {
     response.type("application/json").code(200);
