@@ -1,7 +1,7 @@
 <div align="center">
 
-  <img src="./.github/assets/blue-saiyan-bg.png" alt="Logo" height="200">
-  <h1 align="center"><strong>NODE BOILERPLATE - BLUE EDITION</strong></h1>
+  <img src="./.github/assets/finish-flag.png" alt="Logo" height="200">
+  <h1 align="center"><strong>API Fórmula 1</strong></h1>
   <p align="center">
 	  Don't start a new Node project from zero!<br> Use this simple <b>Nodejs</b> boilerplate with pre-configured <b>Typescript</b> in a modern way.
   </p>
@@ -10,24 +10,23 @@
 
 <br />
 
-  <!-- Badges -->
-<div align="center">
-  
-  [![TypeScript version][ts-badge]][typescript-5-4]
-  [![Node.js version][nodejs-badge]][nodejs]
+# 🚀 Tecnologias
 
-</div>
-
-# 🚀 Technologies
-
-This code source was developed with the following items:
+Este projeto foi desenvolvido com os seguintes items:
 
 ### 📦 Dependencies
 
-- [typescript][typescript-npm] - Superset for application scale JavaScript development
-- [tsx][tsx-npm] - TypeScript Execute (tsx): Enable Node.js to run TypeScript
-- [tsup][tsup-npm] - Bundle your TypeScript library with no config, powered by esbuild
-- [@types/node][@types/node-npm] - type definitions for node
+  <!-- Badges -->
+<div align="start">
+  
+  [![Node.js][nodejs-badge]][nodejs]
+  [![TypeScript][ts-badge]][typescript]
+  [![Fastify][fastify-badge]][fastify]
+  [![@fastify/cors][fastify-cors-badge]][fastify-cors]
+  [![tsup][tsup-badge]][tsup]
+  [![tsx][tsx-badge]][tsx]
+
+</div>
 
 ### 📄 Files
 
@@ -42,40 +41,49 @@ This code source was developed with the following items:
 - `npm run start:watch`: Runs the server in development mode with support for automatic reload on file changes.
 - `npm run start:dist`: Compiles the project and runs the compiled version from the dist directory.
 
-# 👨‍💻 How To Use
+# 👩🏽‍💻 Como utilizar
 
-click in **[Use this template]** OR
-
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v20+](https://nodejs.org/en/) + [NPM v10+](https://nodejs.org/en/) installed on your computer. From your command line:
+Você pode baixar este projeto em arquivo .zip, clicando no botão <b>Code</b>, ou então seguir os passos abaixo para clonar o repositório em seu dispositivo:
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/Debora-Carvalho/node-api-formula1
+# Clone o repositório 
+$ git clone https://github.com/Debora-Carvalho/node-api-formula1.git
 
-# Go into the repository
+# Entre no repositório
 $ cd node-api-formula1
 
-# Install dependencies
+# Instale as dependências
 $ npm install
+
+# Inicie o servidor, utilizando o script 
+$ npm run start:dev
 ```
 
-## Author
+# Author
 
-| [<img src="https://avatars3.githubusercontent.com/u/37452836?s=96&v=4"><br><sub>Felipe Aguiar</sub>](https://github.com/Debora-Carvalho) |
+| [<img src="https://avatars2.githubusercontent.com/u/104103793?v=4" style="width: 100px; height: 100px; border-radius: 50%;"><br><sub>Débora Carvalho</sub>](https://github.com/Debora-Carvalho) |
 | :---------------------------------------------------------------------------------------------------------------------------------------: |
-|                                            [Linkedin](www.linkedin.com/in/felipe-aguiar-exe/)                                             |
+|                                            [Linkedin](www.linkedin.com/in/debora-vieira-carvalho-45a478205)                                             |
 
 # Credits
 
-icons by [Pino Lamanna][dribble-icon]
+icons by [Flaticon ❤️][flaticon-icon]
 
-[typescript]: https://www.typescriptlang.org/
-[typescript-5-4]: https://www.typescriptlang.org/
-[ts-badge]: https://img.shields.io/badge/TypeScript-5.4-blue.svg
-[nodejs-badge]: https://img.shields.io/badge/Node.js->=%2020.00-blue.svg
+Última atualização: jul.2025
+
+
+[flaticon-icon]: https://www.flaticon.com/free-sticker/finish-flag_7295076
+[nodejs-badge]: https://img.shields.io/badge/Node.js-%3E%3D20.00-blue.svg
 [nodejs]: https://nodejs.org/
-[dribble-icon]: https://dribbble.com/Schakalwal
+[ts-badge]: https://img.shields.io/badge/TypeScript-5.8-blue.svg
+[typescript]: https://www.typescriptlang.org/
 [typescript-npm]: https://www.npmjs.com/package/typescript
-[tsx-npm]: https://www.npmjs.com/package/tsx
-[tsup-npm]: https://www.npmjs.com/package/tsup
-[@types/node-npm]: https://www.npmjs.com/package/@types/node
+[fastify-badge]: https://img.shields.io/badge/Fastify-%3E%3D4.0-black.svg
+[fastify]: https://www.fastify.io/
+[fastify-cors-badge]: https://img.shields.io/badge/@fastify/cors-latest-black.svg
+[fastify-cors]: https://github.com/fastify/fastify-cors
+[tsup-badge]: https://img.shields.io/badge/tsup-latest-blue.svg
+[tsup]: https://github.com/egoist/tsup
+[tsx-badge]: https://img.shields.io/badge/tsx-latest-blue.svg
+[tsx]: https://github.com/esbuild-kit/tsx
+
