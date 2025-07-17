@@ -1,5 +1,8 @@
 import fastify from "fastify";
 import cors from "@fastify/cors";
+import { DriverParams } from "./models/driver-params-model";
+import { Routes } from "./routes/routes";
+import { StatusCode } from "./utils/status-code";
 
 const server = fastify({logger: true});
 
@@ -45,29 +48,25 @@ const drivers = [
     }
 ];
 
-server.get("/teams", async (request, response) => {
-    response.type("application/json").code(200);
+server.get(Routes.TEAMS, async (request, response) => {
+    response.type("application/json").code(StatusCode.OK);
     return teams;
 });
 
-server.get("/drivers", async(request, response) => {
-    response.type("application/json").code(200);
+server.get(Routes.DRIVERS, async(request, response) => {
+    response.type("application/json").code(StatusCode.OK);
     return drivers;
 });
 
-interface DriverParams {
-    id: string;
-};
-
-server.get<{Params: DriverParams}>("/drivers/:id", async (request, response) => {
+server.get<{Params: DriverParams}>(Routes.DRIVERS_BY_ID, async (request, response) => {
     const id = parseInt(request.params.id);
     const driver = drivers.find( d => d.id === id );
 
     if (!driver) {
-        response.type("application/json").code(404);
+        response.type("application/json").code(StatusCode.NOT_FOUND);
         return {message: "Driver not found."};        
     } else {
-        response.type("application/json").code(200);
+        response.type("application/json").code(StatusCode.OK);
         return {driver};
     };
 });
